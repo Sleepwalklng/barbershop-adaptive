@@ -2,22 +2,22 @@
 
 var gulp         = require('gulp'),
 		sass         = require('gulp-sass'),
-		plumber      = require('gulp-plumber'),//отлавливает ошибки, не дает упасть серверу
-		browserSync  = require('browser-sync').create(),
-		postcss      = require('gulp-postcss'),//нужен для работы автопрефиксера
-		autoprefixer = require('autoprefixer'),//работает под postcss
-		mqpacker     = require('css-mqpacker'),//перераспределятор медиавыражений, работает под postcss  
-		csso         = require('gulp-csso'),//минификатор CSS
-		rename       = require('gulp-rename'),
-		concat       = require('gulp-concat'),
-		uglify       = require('gulp-uglify'),
+		plumber      = require('gulp-plumber'),  //отлавливает ошибки, не дает упасть серверу
+		browserSync  = require('browser-sync').create(), //сервер
+		postcss      = require('gulp-postcss'),  //нужен для работы автопрефиксера
+		autoprefixer = require('autoprefixer'),  //работает под postcss, выставляет префиксы
+		mqpacker     = require('css-mqpacker'),  //перераспределятор медиавыражений, сортирует их в конец файла
+		csso         = require('gulp-csso'),     //минификатор CSS
+		rename       = require('gulp-rename'),   //переименовывает файлы
+		concat       = require('gulp-concat'),   // собирает несколько файлов в один
+		uglify       = require('gulp-uglify'),   //
 		notify       = require('gulp-notify'),
-		svgstore     = require('gulp-svgstore'),//собиральщик спрайта
-		svgmin       = require('gulp-svgmin'),//минификатор SVG
-		imagemin     = require('gulp-imagemin'),
+		svgstore     = require('gulp-svgstore'), //собиральщик спрайта
+		svgmin       = require('gulp-svgmin'),   //минификатор SVG
+		imagemin     = require('gulp-imagemin'), 
 		pngquant     = require('imagemin-pngquant'),
 		cheerio      = require('gulp-cheerio'),
-		run          = require('run-sequence'),//запуск тасков последовательно
+		run          = require('run-sequence'),  //запуск тасков последовательно
 		del          = require('del');
 
 
