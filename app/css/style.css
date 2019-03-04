@@ -1,0 +1,105 @@
+@font-face {
+  font-weight: normal;
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  src: url("../fonts/ptsansnarrow.woff") format("woff"); }
+
+@font-face {
+  font-weight: 700;
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  src: url("../fonts/ptsansnarrowbold.woff") format("woff"); }
+
+body {
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  color: #f7f4f1;
+  font-style: normal;
+  background-color: #242424; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0, 0, 0, 0); }
+
+.page-header__logo {
+  height: 85px;
+  text-align: center; }
+
+.page-header__logo img {
+  width: 230px;
+  height: 85px; }
+
+@media ((min-width: 768px)) {
+  .page-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #000000; }
+  .page-header__logo {
+    position: relative;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+    height: 398px;
+    background-color: #000000;
+    background-image: url("../img/bg-tablet-inner.jpg");
+    background-repeat: no-repeat;
+    background-position: center -9px; }
+  .page-header__logo--inner-page {
+    height: 214px;
+    background-image: url("../img/bg-tablet-inner.jpg");
+    background-position: center center; }
+  .page-header__logo img {
+    position: absolute;
+    bottom: 257px;
+    left: 50%;
+    width: 370px;
+    height: auto;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .page-header__logo--inner-page img {
+    bottom: 73px; } }
+
+@media ((min-width: 1200px)) {
+  .page-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .page-header__logo {
+    height: 648px;
+    background-position: center 0;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .page-header__logo--inner-page {
+    height: 308px; }
+  .page-header__logo img {
+    bottom: 438px; }
+  .page-header__logo--inner-page img {
+    bottom: 99px; } }

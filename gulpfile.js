@@ -23,7 +23,7 @@ var gulp         = require('gulp'),
 
 // Сборка стилей
 gulp.task('style', function() {
-	gulp.src('app/sass/main.scss')
+	gulp.src('app/sass/style.scss')
 		.pipe(plumber())
 		.pipe(sass({outputStyle: 'expand'})).on('error', notify.onError())
 		.pipe(postcss([
