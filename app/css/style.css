@@ -2320,8 +2320,8 @@ img {
     display: inline; }
   .modal-login__close {
     position: absolute;
-    top: 73px;
-    right: -90px;
+    top: -25px;
+    right: -40px;
     z-index: 105;
     width: 26px;
     height: 26px;
