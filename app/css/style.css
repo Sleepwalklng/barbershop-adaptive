@@ -535,12 +535,6 @@ img {
   line-height: 27px;
   color: #000000; }
 
-.reviews__next {
-  display: none; }
-
-.reviews__prev {
-  display: none; }
-
 .reviews__write {
   display: none; }
 
@@ -2102,61 +2096,6 @@ img {
             transform: scale(1.55); }
   .reviews__author-name {
     margin-bottom: 12px; }
-  .reviews__next,
-  .reviews__prev {
-    position: relative;
-    display: block;
-    -webkit-flex-shrink: 0;
-        -ms-flex-negative: 0;
-            flex-shrink: 0;
-    width: 50px;
-    padding: 0;
-    font-size: 0;
-    background-color: transparent;
-    border: 1px solid #e5ddd5;
-    outline: none;
-    cursor: pointer;
-    -webkit-transition: border-color 0.2s linear, background-color 0.2s linear;
-    -o-transition: border-color 0.2s linear, background-color 0.2s linear;
-    transition: border-color 0.2s linear, background-color 0.2s linear; }
-    .reviews__next:hover, .reviews__next:focus,
-    .reviews__prev:hover,
-    .reviews__prev:focus {
-      border-color: #d5c9bd; }
-    .reviews__next:active,
-    .reviews__prev:active {
-      background-color: #d5c9bd; }
-    .reviews__next::before,
-    .reviews__prev::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 0;
-      height: 0;
-      border: 6px solid transparent;
-      border-right: none;
-      border-left: 12px solid #000000;
-      -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
-      -webkit-transition: -webkit-filter 0.2s linear;
-      transition: -webkit-filter 0.2s linear;
-      -o-transition: filter 0.2s linear;
-      transition: filter 0.2s linear;
-      transition: filter 0.2s linear, -webkit-filter 0.2s linear; }
-    .reviews__next:active::before,
-    .reviews__prev:active::before {
-      -webkit-filter: opacity(0.3);
-              filter: opacity(0.3); }
-  .reviews__prev {
-    -webkit-box-ordinal-group: 0;
-    -webkit-order: -1;
-        -ms-flex-order: -1;
-            order: -1; }
-    .reviews__prev::before {
-      border-right: 12px solid #000000;
-      border-left: none; }
   .reviews__write {
     position: absolute;
     top: 36px;
@@ -2810,10 +2749,6 @@ img {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1); }
-  .reviews__next {
-    margin-left: 21px; }
-  .reviews__prev {
-    margin-right: 21px; }
   .reviews__toggles {
     bottom: 46px; }
   .page-footer__wrapper {
@@ -3036,7 +2971,6 @@ img {
     right: 0;
     left: 70px;
     z-index: 10;
-    height: 80vh;
     background-color: #6a4d38; }
   .main-nav--opened .main-nav__wrapper::before {
     content: "";
