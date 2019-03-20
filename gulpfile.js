@@ -55,7 +55,7 @@ gulp.task('common-js', function() {
 
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
-		'app/libs/jquery/dist/jquery.min.js', // сюда добавляем библиотеки
+		'app/js/script.js', // сюда добавляем библиотеки
 		//'app/js/common.min.js', // Всегда в конце, раскоментить, если хотим склеить весь js, удалить подключение common.js в index.html
 		])
 	.pipe(plumber())
